@@ -47,13 +47,18 @@ const filterNames = [
         note: 3,
     }
 ];
-filterNames.forEach((item) => {
-    if(item.name === 'Juan') {
-        console.log(item);
-    } else {
-        console.log('Null');
-    }
-});
+const findStudent = (array, name) => {
+    let studentFound = null;
+
+    array.forEach((item) => {
+        if (item.name === name) {
+            studentFound = item;
+        }
+    });
+    return studentFound;
+};
+console.log(findStudent(filterNames, 'Juan'));
+console.log(findStudent(filterNames, 'Ana'));
 
 // 4. https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
 const filterProducts = [
