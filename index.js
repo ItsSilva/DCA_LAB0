@@ -1,4 +1,4 @@
-// 1. Write a function that takes an array of numbers and returns the sum of the numbers.
+// 1. https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce
 const objectsArray = [ 
         {
         name: 'John',
@@ -9,13 +9,12 @@ const objectsArray = [
         age: 25
         }
     ]
-    
 const sumAge = (objectsArray) => {
     return objectsArray.reduce((acu, {age}) => acu + age, 0);
 };
 console.log(sumAge(objectsArray));
 
-// 2.
+// 2. https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/filter
 const filterObjects = [
     {
         name: 'Apple',
@@ -33,7 +32,7 @@ const filterObjects = [
 const filterPrices = filterObjects.filter((item) => item.price > 50);
 console.log(filterPrices);
 
-// 3.
+// 3. https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach
 const filterNames = [
     {
         name: 'Juan',
@@ -55,7 +54,8 @@ filterNames.forEach((item) => {
         console.log('Null');
     }
 });
-// 4.
+
+// 4. https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
 const filterProducts = [
     {
         name: 'Apple',
@@ -72,7 +72,8 @@ const filterProducts = [
 ];
 filterProducts.sort((a, b) => a.price - b.price);
 console.log(filterProducts);
-// 5.
+
+// 5. https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/concat
 const peopleArray01 = [
 {
     name: 'Juan',
